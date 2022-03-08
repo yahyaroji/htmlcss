@@ -89,11 +89,21 @@ nav ul li a{
 }
 
 .model{
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     height: 560px;
     position: absolute;
     bottom: 1%;
     left: 80%;
     transform: translateX(-70%);
+    animation-timing-function: cubic-bezier(0.10, 0.1, 0.1, 0.1);
+}
+
+@keyframes jump {    
+    50% {
+        bottom: 10%;
+    }
 }
 
 footer p{
